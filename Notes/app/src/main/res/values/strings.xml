@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">熊猫记事本</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="track_line">画笔</string>
+    <string name="straight_line">Straight Line</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="oval">Oval</string>
+    <string name="circle">Circle</string>
+    <string name="dots">Dots</string>
+    <string name="Eraser">橡皮擦</string>
+    <string name="datetime_dialog_ok">设置</string>
+    <string name="datetime_dialog_cancel">取消</string>
+    <string name="remindsetting_name">提醒设置</string>
+</resources>

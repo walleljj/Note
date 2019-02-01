@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="paintstyle">
+        <item>@string/track_line</item>
+        <item>@string/Eraser</item>
+    </string-array>
+    <string-array name="paintsize">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="paintsize1">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="paintcolor">
+        <item>红色</item>
+        <item>蓝色</item>
+        <item>黑色</item>
+        <item>绿色</item>
+        <item>黄色</item>
+        <item>青色</item>
+        <item>灰色</item>
+    </string-array>
+    <string-array name="itemOperation">
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+
+</resources>

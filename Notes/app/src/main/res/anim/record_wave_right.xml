@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item 
+        android:drawable="@drawable/record_wave_right_01"
+        android:duration="500"/>
+      <item 
+        android:drawable="@drawable/record_wave_right_02"
+        android:duration="500"/>
+        <item 
+        android:drawable="@drawable/record_wave_right_03"
+        android:duration="500"/>
+          <item 
+        android:drawable="@drawable/record_wave_right_04"
+        android:duration="500"/>
+
+</animation-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置按钮默认显示的图片-->
+    <item android:state_pressed="false" android:state_focused="false"
+          android:drawable="@drawable/bt_tuichu"/>
+    <!--设置按钮按下显示的图片-->
+    <item android:state_pressed="true" android:drawable="@drawable/bt_tuichu_on"/>
+    <!--设置按钮长按时显示的图片-->
+    <item android:state_focused="true" android:drawable="@drawable/bt_tuichu_on"/>
+</selector>

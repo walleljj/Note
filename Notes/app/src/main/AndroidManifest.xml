@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mingrisoft.notes">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoteTheme">
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddActivity"
+            android:exported="true"
+            android:theme="@style/NoteTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".About"/>
+        <activity android:name=".ShowRecord"/>
+        <activity android:name=".ShowNoteActivity"/>
+        <activity android:name=".PaintActivity"/>
+        <activity android:name=".ActivityRecord"/>
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".DataSearchActivity"/>
+        <activity
+            android:name=".HandWriteActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <receiver
+            android:name=".data.CallAlarm"
+            android:process=":remote"/>
+
+        <activity
+            android:name=".data.AlarmAlert"
+            android:label="@string/remindsetting_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".XiugaimimaActivity">
+        </activity>
+    </application>
+
+</manifest>

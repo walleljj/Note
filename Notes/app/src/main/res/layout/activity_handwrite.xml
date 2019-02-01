@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+   <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/navigationbar_bg" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/navigationbar_backup" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="新增记事"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/navigationbar_save" />
+    </RelativeLayout>
+  	<FrameLayout
+ 	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:id="@+id/finger_layout"  
+  	android:layout_below="@+id/rl"
+  	>
+        
+        <com.mingrisoft.notes.view.LineEditText
+        android:id="@+id/et_handwrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:lineSpacingExtra="10dp"
+        android:textColor="#00000000"
+        android:background="@android:color/white"
+        
+        />
+        
+ 	  <com.mingrisoft.notes.view.TouchView
+        	android:id="@+id/touch_view"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@android:color/transparent" >
+     </com.mingrisoft.notes.view.TouchView>
+  	
+    
+    </FrameLayout>
+    <ImageView 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/line"
+      android:layout_above="@+id/paintBottomMenu"
+      />
+   
+    <GridView 
+       android:id="@+id/paintBottomMenu" 
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:numColumns="auto_fit"
+       android:background="@drawable/navigationbar_bg"
+       android:horizontalSpacing="10dp"
+       android:layout_alignParentBottom="true"
+       ></GridView>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+     >
+     <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/navigationbar_bg" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/navigationbar_backup" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="新增记事"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/navigationbar_save" />
+    </RelativeLayout>
+   <com.mingrisoft.notes.view.PaintView
+       android:id="@+id/paint_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/rl"
+       ></com.mingrisoft.notes.view.PaintView>
+   
+   <ImageView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/line"
+       android:layout_above="@+id/paintBottomMenu"
+       />
+    <GridView 
+       android:id="@+id/paintBottomMenu" 
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:numColumns="auto_fit"
+       android:background="@drawable/navigationbar_bg"
+       android:horizontalSpacing="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:layout_alignParentBottom="true"
+       ></GridView>
+
+</RelativeLayout>
